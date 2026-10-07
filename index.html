@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Lost &amp; Found | Final Commit sample project</title>
+  <meta name="description" content="Post lost and found items on campus, claim them with a proof question, and arrange the hand-over. A sample web app by Final Commit." />
+  <link rel="icon" href="https://finalcommitprojects.github.io/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f6b0f6cf-bb7f-4bd1-917e-acc1d8116251" data-domains="finalcommitprojects.github.io"></script>
+</head>
+<body>
+  <div id="demo-banner" class="banner">
+    Demo mode: anything you post stays in this browser only.
+    <button id="reset" type="button" class="link" data-umami-event="demo-lostfound-reset">Reset demo data</button>
+  </div>
+  <header class="top">
+    <a href="#/" class="brand"><span class="logo" aria-hidden="true">LF</span> Campus Lost &amp; Found</a>
+    <nav aria-label="Main">
+      <a href="#/" data-nav>Browse</a>
+      <a href="#/post" data-nav data-umami-event="demo-lostfound-post">Post</a>
+      <a href="#/mine" data-nav>My stuff</a>
+      <a href="#/admin" data-nav id="nav-admin" hidden>Admin</a>
+    </nav>
+    <div id="who" class="who"></div>
+  </header>
+  <main id="view" class="wrap" aria-live="polite"></main>
+  <footer class="wrap foot">
+    Sample project for a fictional college. Built by
+    <a href="https://finalcommitprojects.github.io/?utm_source=demo&amp;utm_campaign=demo-lost-found" data-umami-event="demo-to-site">Final Commit</a>
+    · <a href="https://github.com/finalcommitprojects/demo-lost-found/tree/main/samples" data-umami-event="demo-samples">Sample report, PPT and diagrams</a>
+  </footer>
+  <p id="toast" class="toast" role="status" hidden></p>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
